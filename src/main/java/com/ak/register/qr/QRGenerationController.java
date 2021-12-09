@@ -11,9 +11,9 @@ import java.io.IOException;
 /**
  * QRGenerationController
  * <p>
- *     Controller for the QR generation page.
- *     This page is used to generate a QR code for the user to scan.
- *     The QR code is then used to register the user.
+ * Controller for the QR generation page.
+ * This page is used to generate a QR code for the user to scan.
+ * The QR code is then used to register the user.
  * </p>
  */
 @Controller

@@ -19,6 +19,7 @@ public class QRUtils {
 
   /**
    * Generates QR code image for the given text and saves it to the given path.
+   *
    * @param text
    * @param width
    * @param height
@@ -37,6 +38,7 @@ public class QRUtils {
 
   /**
    * Generates QR code image for the given text and returns it as a byte array.
+   *
    * @param text
    * @param width
    * @param height
@@ -49,7 +51,7 @@ public class QRUtils {
     BitMatrix bitMatrix = qrCodeWriter.encode(text, BarcodeFormat.QR_CODE, width, height);
 
     ByteArrayOutputStream pngOutputStream = new ByteArrayOutputStream();
-    MatrixToImageConfig config = new MatrixToImageConfig( 0xFF000002 , 0xFFFFC041 ) ;
+    MatrixToImageConfig config = new MatrixToImageConfig(MatrixToImageConfig.BLACK, MatrixToImageConfig.WHITE);
 
     MatrixToImageWriter.writeToStream(bitMatrix, "PNG", pngOutputStream, config);
     return pngOutputStream.toByteArray();
