@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Organization X</title>
+</head>
+<body>
+    <h1>Organization X</h1>
+    <h2>QR Code</h2>
+    <p>
+        <img th:src="@{${'{data:image/png;base64,' + qrcode}}" alt="QR Code" />
+    </p>
+</body>
+</html>

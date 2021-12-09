@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<strong>Welcome to register</strong>
+Unified platform for vendors and customers.
+Providing service to register clients to appointments.
+yeah
+<form th:action="@{/register}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email">
+    <label for="password">Password:</label>
+    <input type="password" placeholder="password" id="password">
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>
