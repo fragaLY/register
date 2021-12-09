@@ -9,13 +9,13 @@
 Unified platform for vendors and customers.
 Providing service to register clients to appointments.
 yeah
-<form th:action="@{/register}" method="post">
+<form method="post" th:action="@{/register}">
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name">
+    <input id="name" name="name" type="text">
     <label for="email">Email:</label>
-    <input type="text" name="email" id="email">
+    <input id="email" name="email" type="text">
     <label for="password">Password:</label>
-    <input type="password" placeholder="password" id="password">
+    <input id="password" placeholder="password" type="password">
     <input type="submit" value="Register">
 </form>
 </body>
