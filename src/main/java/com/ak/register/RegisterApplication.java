@@ -3,6 +3,9 @@ package com.ak.register;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author Aliaksandr Karankevich
+ */
 @SpringBootApplication
 public class RegisterApplication {
 

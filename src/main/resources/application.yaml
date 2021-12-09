@@ -1,1 +1,3 @@
-
+spring:
+  jpa:
+    open-in-view: false # I want to be it here just by default. No DTOs, No mappers!
