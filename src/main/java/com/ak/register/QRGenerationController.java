@@ -1,14 +1,17 @@
 package com.ak.register;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class QRGenerationController {
   @GetMapping("/qr")
-  public String qr(ModelAndView modelAndView) {
-    modelAndView.addObject("qrcode", "QR");
+  public String qr(Model model, HttpServletRequest request) {
+    model.addAttribute("currenturl", request.getRequestURL().toString());
+    model.addAttribute("qrcode", "QR");
     return "qr";
   }
 }

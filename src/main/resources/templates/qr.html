@@ -8,7 +8,8 @@
     <h1>Organization X</h1>
     <h2>QR Code</h2>
     <p>
-        <img th:src="@{${'{data:image/png;base64,' + qrcode}}" alt="QR Code" />
+        <img th:src="@{${'data:image/png;base64,' + qrcode}}" alt="QR Code" />
+        <span th:text="${currenturl}"></span>
     </p>
 </body>
 </html>
